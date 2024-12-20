@@ -54,7 +54,7 @@
                       </a>
     
                             <!-- next button -->
-                            <a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();" :disabled="questionIndex>=quiz.questions.length">
+                            <a class="button nextBtn" :class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();" :disabled="questionIndex>=quiz.questions.length">
                         {{ (userResponses[questionIndex]==null)?'Utqazib yubor':'Keyingis' }}
                       </a>
     

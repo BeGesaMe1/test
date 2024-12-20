@@ -1,5 +1,5 @@
-$trans_duration: 0.3s;
-$primary_color: #3D5AFE;
+/* $trans_duration: 0.3s;
+$primary_color: #3D5AFE; */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
@@ -15,24 +15,24 @@ body {
    /* mocking native UI */
    cursor: default !important; /* remove text selection cursor */
    user-select: none; /* remove text selection */
-   user-drag: none; /* disbale element dragging */
+  /* / user-drag: none; disbale element dragging */
 	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.button {
+/* .button {
    transition: $trans_duration;
-}
+} */
 .title,
 .subtitle {
    font-family: Montserrat, sans-serif;
    font-weight: normal;
 }
-.animated {
+/* .animated {
    transition-duration: $trans_duration/2;
-}
+} */
 
 .container{
 	margin: 0 0.5rem;
@@ -71,11 +71,11 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 				 overflow: hidden;
 				 border:none;
 				 
-				 color:$primary_color;
+				 /* color:$primary_color;
 				&::-moz-progress-bar { background: $primary_color; }
-				&::-webkit-progress-value { background: $primary_color; }
+				&::-webkit-progress-value { background: $primary_color; } */
 			 }
-			 >p{
+			  p{
 				 margin:0;
 				 margin-top: 0.5rem;
 			 }
@@ -133,7 +133,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             padding: 9px 18px;
             margin: 0 18px;
             margin-bottom: 12px;
-            transition: $trans_duration;
+            /* transition: $trans_duration; */
             cursor: pointer;
             background-color: rgba(0, 0, 0, 0.05);
 					 color: rgba(0,0,0,0.85);
@@ -159,7 +159,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
          align-self: flex-end;
 
          .pagination {
-            //padding: 10px 15px;
+            padding: 10px 15px;
             margin: 15px 25px;
          }
       }
@@ -174,26 +174,30 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	border: 1px solid rgba(0,0,0,0.25);
 	border-radius: 5rem;
 	margin: 0 0.25rem;
-	
+	/* background-color: green; */
 	transition:0.3s;
 	
 	&:hover{
 		cursor: pointer;
-		background: #ECEFF1;
+		background: black;
 		border-color:rgba(0,0,0,0.25);
+      color: white;
 	}
 	&.is-active{
-		background: $primary_color;
+		background: primary_color;
 		color: white;
 		border-color: transparent;
 		
 		&:hover{
-			background: darken($primary_color,10%);
+			background: darken(primary_color,10%);
 			
 		}
 	}
 }
-
+.nextBtn{
+   background-color: rgba(128, 128, 128, 0.769);
+   color: white;
+}
 @media screen and (min-width: 769px) {
    .questionBox {
       align-items: center;
@@ -212,3 +216,21 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       border-radius: 6px 6px 0px 0px;
    }
 }
+
+
+/* width */
+::-webkit-scrollbar {
+   width: 20px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 10px;
+   }
+   
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+   background: rgba(128, 128, 128, 0.567);
+     border-radius: 10px;
+   }
