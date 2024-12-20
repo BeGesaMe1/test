@@ -30,8 +30,8 @@ var quiz = {
        {
           text: "<h3> eng katta sarlavha tegidir.",
           responses: [
-             { text: "Xa", correct: true },
-             { text: "Yoq" },
+             { text: "Xa"},
+             { text: "Yoq", correct: true },
              
           ]
        },
@@ -131,7 +131,7 @@ var quiz = {
       {
          text: "Hamma savolga 100% javob berdim deb o'ylaysizmi ?",
          responses: [
-            { text: "Xa", correct: true },
+            { text: "Xa" , correct: true },
             { text: "Yoq"},
          ]
       }
