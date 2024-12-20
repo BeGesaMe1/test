@@ -95,7 +95,46 @@ var quiz = {
              { text: "block element", correct: true },
             
           ]
-       }
+       },
+       {
+         text: "HTML nechi qisimdan iborat",
+         responses: [
+            { text: "1 qisimdan iborat" },
+            { text: "2 qisimdan iborat", correct: true },
+            { text: "3 qismdan iborat"}
+         ]
+      },
+      {
+         text: "Img tegining alt atributi nima vazifani bajarib beradi",
+         responses: [
+            { text: "Img tegiga rasm quyib beradi" },
+            { text: "Img tegiga rasm chiqmay qolsa text chiqarib beradi", correct: true },
+            { text: "Ikkla javob ham to'g'ri "}
+         ]
+      },
+      {
+         text: "<a hreaf=''> tegining vazifasi nima ?",
+         responses: [
+            { text: "Userni a nuqtadan b nuqtaga olib utishda ishlatiladi", correct: true },
+            { text: "Video quyishda ishlatiladi"},
+            { text: "Text yozishda ishlatiladi"}
+         ]
+      },
+      {
+         text: "audio va video teglari ishlashi uchun qanaqa atributdan foydalanamiz ?",
+         responses: [
+            { text: "requried" },
+            { text: "controls", correct: true },
+            { text: "placeholder"}
+         ]
+      },
+      {
+         text: "Hamma savolga 100% javob berdim deb o'ylaysizmi ?",
+         responses: [
+            { text: "Xa", correct: true },
+            { text: "Yoq"},
+         ]
+      }
     ]
  },
  userResponseSkelaton = Array(quiz.questions.length).fill(null);
