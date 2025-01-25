@@ -2,139 +2,98 @@ var quiz = {
     user: "Dave",
     questions: [
        {
-          text: "<title> qaysi element ichida buladi",
+          text: "1/10 background-reapet hosasi nima uchun ishlatiladi ?",
           responses: [
-             { text: "<body> element ichida" },
-             { text: "<head> element ichida", correct: true },
+             { text: "Rasm moslashtirishda ishlatiladi." },
+             { text: "Rasm takrorlanmasligi uchun", correct: true },
              
           ]
        },
        {
-          text: "HTML tuliq yozilgan qismi toping",
+          text: "2/10 Rasm formati nechi turga bulinadi ?",
           responses: [
-             { text: "Hyper Text Markup Language", correct: true },
-             { text: "Hyper Text Modul Language" },
-             { text: "Hyper Test Markup Language" },
-             { text: "Hyperlink Markup Language" }
+             { text: "3", correct: true },
+             { text: "4" },
+             { text: "2" },
+             { text: "6" }
           ]
        },
        {
-          text: "<style> tegidan qayerda foylanamiz ?",
+          text: "3/10 object-fit hosasi nima vazifani bajaradi ?",
           responses: [
-             { text: "Faqat <body> elementi ichida" },
-             { text: "Faqat <head> elementi ichida", correct: true },
-             { text: "<body> ning ham <head> ning ham ichida" },
+             { text: "Rasm xiraligidan asraydi" },
+             { text: "Rasmni formatini tug'irlaydi ", correct: true },
+             { text: "Rasmni kichkina qiladi" },
              
           ]
        },
        {
-          text: "<h3> eng katta sarlavha tegidir.",
+          text: "4/10 Nechi xil selector bor ?",
           responses: [
-             { text: "Xa"},
-             { text: "Yoq", correct: true },
+             { text: "3"},
+             { text: "5", correct: true },
+             { text: "4"},
+             { text: "6"},
              
           ]
        },
        {
-          text: "Yangi paragraf uchun qaysi HTML tegi toʻgʻri?",
+          text: "5/10 Htmlga nechi xil yul bilan css ulashimiz mumkin",
           responses: [
-             { text: "<paragraph>" },
+             { text: "4 xil " },
              {
-                text: "<pre>"
+                text: "2 xil"
              },
-             { text: "<p>", correct: true },
+             { text: "3 xil", correct: true },
              
           ]
        },
        {
           text:
-             "<img> tegi ichidagi rasmning joylashuviga havola qilish uchun HTML atributi nima?",
+             "6/10 Table da qator ochishimiz uchun qaysi tegdan foydalanamiz ?",
           responses: [
-             { text: "src" , correct: true },
-             { text: "href" },
-             { text: "location"},
-             { text: "link" }
+             { text: "tr" , correct: true },
+             { text: "td" },
+             { text: "th"},
+             { text: "tb" }
           ]
        },
        {
-          text: "Qaysi teg foydalanuvchi katta hajmdagi matn kiritishi mumkin bo'lgan shakl maydonini bildiradi? ",
+          text: "7/10 Position relative nima qilib beradi",
           responses: [
-             { text: "<textarea>", correct: true },
-             { text: "<button>" },
+             { text: "Elementni boshqa element ustiga chiqarishda ishlatiladi", correct: true },
+             { text: "Elementni surishda ishlatiladi" },
              {
-                text: "<a>"
+                text: "Elementni garizantal surishda ishlatiladi"
              },
-             { text: "<label>" }
-          ]
-       },
-       {
-          text: "Jadval qatorini yaratish uchun qaysi HTML tegidan foydalaniladi?",
-          responses: [
-             { text: "<tr>" , correct: true  },
-             { text: "<td>"},
-             { text: "<th>" },
-             { text: "<table>" }
-          ]
-       },
-       {
-          text:
-             "Raqamlangan ro'yxatni yaratish uchun qaysi HTML tegidan foydalaniladi?",
-          responses: [
-             {
-                text: "<ul>"
-             },
-             { text: "<li>" },
-             { text: "<ol>", correct: true },
-             { text: "<dl>" }
-          ]
-       },
-       {
-          text: "<p> tegi inline elementmi yoki block elementmi ?",
-          responses: [
-             { text: "inline element" },
-             { text: "block element", correct: true },
             
           ]
        },
        {
-         text: "HTML nechi qisimdan iborat",
-         responses: [
-            { text: "1 qisimdan iborat" },
-            { text: "2 qisimdan iborat", correct: true },
-            { text: "3 qismdan iborat"}
-         ]
-      },
-      {
-         text: "Img tegining alt atributi nima vazifani bajarib beradi",
-         responses: [
-            { text: "Img tegiga rasm quyib beradi" },
-            { text: "Img tegiga rasm chiqmay qolsa text chiqarib beradi", correct: true },
-            { text: "Ikkla javob ham to'g'ri "}
-         ]
-      },
-      {
-         text: "<a hreaf=''> tegining vazifasi nima ?",
-         responses: [
-            { text: "Userni a nuqtadan b nuqtaga olib utishda ishlatiladi", correct: true },
-            { text: "Video quyishda ishlatiladi"},
-            { text: "Text yozishda ishlatiladi"}
-         ]
-      },
-      {
-         text: "audio va video teglari ishlashi uchun qanaqa atributdan foydalanamiz ?",
-         responses: [
-            { text: "requried" },
-            { text: "controls", correct: true },
-            { text: "placeholder"}
-         ]
-      },
-      {
-         text: "Hamma savolga 100% javob berdim deb o'ylaysizmi ?",
-         responses: [
-            { text: "Xa" , correct: true },
-            { text: "Yoq"},
-         ]
-      }
+          text: "8/10 Float nima vazifani bajarib beradi ?",
+          responses: [
+             { text: "Elementni chapga yoki unga utgizishda ishlatiladi" , correct: true  },
+             { text: "Elementni urtaga utgizib beradi"},
+             { text: "Elementni tepadan pastga utgizib beradi"}, 
+          ]
+       },
+       {
+          text:
+             "9/10 Inline elementni block qilolamizmi ?",
+          responses: [
+             { text: "xa", correct: true},
+             { text: "yoq" },
+             
+          ]
+       },
+       {
+          text: "10/10 Transform Skew nima vazifa bajaradi ?",
+          responses: [
+             { text: "Elementni chapdan unga surib beradi"},
+             { text: "Elementni oldi va orqa tomonga surib beradi", correct: true },
+            
+          ]
+         }
     ]
  },
  userResponseSkelaton = Array(quiz.questions.length).fill(null);
@@ -184,7 +143,7 @@ var app = new Vue({
        }
        return score;
 
-       //return this.userResponses.filter(function(val) { return val }).length;
+      //return this.userResponses.filter(function(val) { return val }).length;
     }
  }
 });
